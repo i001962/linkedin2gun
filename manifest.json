@@ -1,0 +1,28 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "name": "LinkedIn Resume Export to GunDB",
+    "description": "Export a profile page GunDB in JSOM Resume format",
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "declarativeContent",
+        "activeTab",
+        "storage",
+        "https://gun-manhattan.herokuapp.com/"
+    ],
+    "content_security_policy": "script-src 'self' https://gun-manhattan.herokuapp.com/gun.js ; object-src 'self'",
+    "version": "2.1.2"
+}
