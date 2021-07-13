@@ -212,6 +212,8 @@ chrome.tabs.executeScript(
     }
 );
 
+
+
 getSpecVersion().then((spec) => {
     SPEC_SELECT.value = spec;
 });
